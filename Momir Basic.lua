@@ -1,6 +1,6 @@
 local cmc = ""
 local packCount = 0
-local magicBack = "http://cloud-3.steamusercontent.com/ugc/1044218919659567154/72AEBC61B3958199DE4389B0A934D68CE53D030B/"
+local magicBack = "https://steamusercontent-a.akamaihd.net/ugc/1044218919659567154/72AEBC61B3958199DE4389B0A934D68CE53D030B/"
 local retryCount = 0
 local relatedRetryCount = 0
 local maxRetries = 20
@@ -63,15 +63,16 @@ self.createInput({
 self.createButton({
     click_function = "submit",
     function_owner = self,
-    label          = "Submit",
-    position       = {.65, .5, 1.3},
-    rotation       = {0, 0, 0},
-    width          = 400,
-    height         = 200,
-    font_size      = 78,
-    color          = {0, .5, 0},
-    font_color     = {1, 1, 1},
-    tooltip        = "Generate card",
+    label = "Submit",
+    position = {.55, .5, 1.3},
+    rotation = {0, 0, 0},
+    scale = {0.5, 0.5, 0.5},
+    width = 1000,
+    height = 400,
+    font_size = 320,
+    color = {0, .5, 0},
+    font_color = {1, 1, 1},
+    tooltip = "Generate card",
 })
 
 function submit(obj, color, alt_click)
