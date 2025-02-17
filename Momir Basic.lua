@@ -38,7 +38,8 @@ function createCard(name, cardFace, cardBack, player)
     local spawnData = {
         type = "CardCustom",
         position = playerSeat.position + (playerSeat.forward * 5 ),
-        rotation = vector(playerSeat.rotation.x, (playerSeat.rotation.y + 180) % 360, playerSeat.rotation.z)
+        rotation = vector(playerSeat.rotation.x, (playerSeat.rotation.y + 180) % 360, playerSeat.rotation.z),
+        scale = vector(1.5, 1, 1.5)
     }
 
     local newCard = spawnObject(spawnData)
